@@ -1,0 +1,45 @@
+$theme-colors: (
+        "primary":hsl(218, 44%, 22%),
+        "secondary":hsl(220, 15%, 55%),
+        "white":hsl(0, 0%, 100%),
+       "light":hsl(212, 45%, 89%)
+        );
+
+$font-family-sans-serif:'Outfit', sans-serif;
+$border-radius:15px;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/animate.css";
+p{
+        font-size: 15px !important;
+}
+h3{
+        font-size: 25px !important;
+}
+.card{
+        transition: 0.5s;
+}
+.card img{
+        transition: 0.5s;
+}
+.card img:hover{
+        //box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        animation: animate__pulse;
+        animation-duration: 0.5s;
+}
+.card:hover{
+       box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media screen and(max-width: 576px) {
+        h3{
+                font-size: 20px !important;
+        }
+        p{
+                font-size: 12px !important;
+        };
+
+}
+
+
